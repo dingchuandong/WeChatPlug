@@ -1,0 +1,1239 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D6B0701FCEB03800061F0D /* WechatPluginPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D6B0661FCEB03800061F0D /* WechatPluginPro.framework */; };
+		01D6B0751FCEB03800061F0D /* WechatPluginProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D6B0741FCEB03800061F0D /* WechatPluginProTests.m */; };
+		01D6B0771FCEB03800061F0D /* WechatPluginPro.h in Headers */ = {isa = PBXBuildFile; fileRef = 01D6B0691FCEB03800061F0D /* WechatPluginPro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01D6B08B1FCEC55600061F0D /* NSObject+hookWechat.h in Headers */ = {isa = PBXBuildFile; fileRef = 01D6B0891FCEC55600061F0D /* NSObject+hookWechat.h */; };
+		01D6B08C1FCEC55600061F0D /* NSObject+hookWechat.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D6B08A1FCEC55600061F0D /* NSObject+hookWechat.m */; };
+		01F0A7591FCFA48E009E206B /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01F0A7581FCFA48E009E206B /* main.mm */; };
+		01F0A75C1FD53DA0009E206B /* SkingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F0A75A1FD53DA0009E206B /* SkingHelper.h */; };
+		01F0A75D1FD53DA0009E206B /* SkingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F0A75B1FD53DA0009E206B /* SkingHelper.m */; };
+		01F0A7641FD94DF5009E206B /* WCContactData.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F0A7621FD94DF5009E206B /* WCContactData.h */; };
+		01F0A7651FD94DF5009E206B /* WCContactData.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F0A7631FD94DF5009E206B /* WCContactData.m */; };
+		01F0A7701FDE6185009E206B /* WXInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F0A76E1FDE6185009E206B /* WXInterface.h */; };
+		4F1B5D2E1FE7835600A99FF0 /* RMQClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F1B5D2D1FE7835600A99FF0 /* RMQClient.h */; };
+		4F1B5E7F1FE7E2FD00A99FF0 /* UserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F1B5E7D1FE7E2FD00A99FF0 /* UserInfo.h */; };
+		4F1B5E801FE7E2FD00A99FF0 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B5E7E1FE7E2FD00A99FF0 /* UserInfo.m */; };
+		4F31C7A71FE23A41004D43F6 /* ServerCallHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F31C7A51FE23A41004D43F6 /* ServerCallHelper.h */; };
+		4F31C7A81FE23A42004D43F6 /* ServerCallHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F31C7A61FE23A41004D43F6 /* ServerCallHelper.m */; };
+		4F31C7AB1FE25D48004D43F6 /* CallServerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F31C7A91FE25D48004D43F6 /* CallServerHelper.h */; };
+		4F31C7AC1FE25D48004D43F6 /* CallServerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F31C7AA1FE25D48004D43F6 /* CallServerHelper.m */; };
+		4F38D0832005B16B0067F472 /* JKVObjectPrinter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38CFF42005B16A0067F472 /* JKVObjectPrinter.h */; };
+		4F38D0842005B16B0067F472 /* JKVClassInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38CFF52005B16A0067F472 /* JKVClassInspector.h */; };
+		4F38D0852005B16B0067F472 /* JKVMutableValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38CFF62005B16A0067F472 /* JKVMutableValue.m */; };
+		4F38D0862005B16B0067F472 /* JKVValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38CFF72005B16A0067F472 /* JKVValue.h */; };
+		4F38D0872005B16B0067F472 /* JKVProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38CFF82005B16A0067F472 /* JKVProperty.h */; };
+		4F38D0882005B16B0067F472 /* JKVValueImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38CFF92005B16A0067F472 /* JKVValueImpl.h */; };
+		4F38D0892005B16B0067F472 /* JKVFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38CFFA2005B16A0067F472 /* JKVFactory.m */; };
+		4F38D08A2005B16B0067F472 /* JKVKeyedEncoderVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38CFFB2005B16A0067F472 /* JKVKeyedEncoderVisitor.m */; };
+		4F38D08B2005B16B0067F472 /* JKVObjectPrinter-Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38CFFC2005B16A0067F472 /* JKVObjectPrinter-Protected.h */; };
+		4F38D08C2005B16B0067F472 /* JKVKeyedDecoderVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38CFFD2005B16A0067F472 /* JKVKeyedDecoderVisitor.h */; };
+		4F38D08D2005B16B0067F472 /* JKVNonZeroSetterVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38CFFE2005B16A0067F472 /* JKVNonZeroSetterVisitor.h */; };
+		4F38D08E2005B16B0067F472 /* JKVMutableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38CFFF2005B16A0067F472 /* JKVMutableValue.h */; };
+		4F38D08F2005B16B0067F472 /* JKVObjectPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0002005B16A0067F472 /* JKVObjectPrinter.m */; };
+		4F38D0902005B16B0067F472 /* JKVClassInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0012005B16A0067F472 /* JKVClassInspector.m */; };
+		4F38D0912005B16B0067F472 /* JKVValueImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0022005B16A0067F472 /* JKVValueImpl.m */; };
+		4F38D0922005B16B0067F472 /* JKVProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0032005B16A0067F472 /* JKVProperty.m */; };
+		4F38D0932005B16B0067F472 /* JKVKeyedEncoderVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0042005B16A0067F472 /* JKVKeyedEncoderVisitor.h */; };
+		4F38D0942005B16B0067F472 /* JKVFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0052005B16A0067F472 /* JKVFactory.h */; };
+		4F38D0952005B16B0067F472 /* JKVNonZeroSetterVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0062005B16A0067F472 /* JKVNonZeroSetterVisitor.m */; };
+		4F38D0962005B16B0067F472 /* JKVKeyedDecoderVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0072005B16A0067F472 /* JKVKeyedDecoderVisitor.m */; };
+		4F38D0972005B16B0067F472 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4F38D0092005B16A0067F472 /* LICENSE */; };
+		4F38D0982005B16B0067F472 /* RMQHeartbeat.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D00B2005B16A0067F472 /* RMQHeartbeat.h */; };
+		4F38D0992005B16B0067F472 /* RMQTCPSocketTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D00C2005B16A0067F472 /* RMQTCPSocketTransport.m */; };
+		4F38D09A2005B16B0067F472 /* RMQHeartbeatSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D00D2005B16A0067F472 /* RMQHeartbeatSender.h */; };
+		4F38D09B2005B16B0067F472 /* RMQSemaphoreWaiter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D00E2005B16A0067F472 /* RMQSemaphoreWaiter.m */; };
+		4F38D09C2005B16B0067F472 /* RMQSynchronizedMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D00F2005B16A0067F472 /* RMQSynchronizedMutableDictionary.m */; };
+		4F38D09D2005B16B0067F472 /* RMQQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0102005B16A0067F472 /* RMQQueue.m */; };
+		4F38D09E2005B16B0067F472 /* RMQHandshaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0112005B16A0067F472 /* RMQHandshaker.m */; };
+		4F38D09F2005B16B0067F472 /* RMQProtocolHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0122005B16A0067F472 /* RMQProtocolHeader.h */; };
+		4F38D0A02005B16B0067F472 /* RMQTransactionalConfirmations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0132005B16A0067F472 /* RMQTransactionalConfirmations.m */; };
+		4F38D0A12005B16B0067F472 /* RMQConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0142005B16A0067F472 /* RMQConnection.h */; };
+		4F38D0A22005B16B0067F472 /* RMQFrameset.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0152005B16A0067F472 /* RMQFrameset.h */; };
+		4F38D0A32005B16B0067F472 /* RMQConnectionRecover.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0162005B16A0067F472 /* RMQConnectionRecover.m */; };
+		4F38D0A42005B16B0067F472 /* RMQConnectionRecovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0172005B16A0067F472 /* RMQConnectionRecovery.h */; };
+		4F38D0A52005B16B0067F472 /* RMQBasicProperties+MergeDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0182005B16A0067F472 /* RMQBasicProperties+MergeDefaults.h */; };
+		4F38D0A62005B16B0067F472 /* RMQLocalSerialQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0192005B16A0067F472 /* RMQLocalSerialQueue.h */; };
+		4F38D0A72005B16B0067F472 /* RMQValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D01A2005B16A0067F472 /* RMQValues.m */; };
+		4F38D0A82005B16B0067F472 /* RMQReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D01B2005B16A0067F472 /* RMQReader.h */; };
+		4F38D0A92005B16B0067F472 /* RMQTickingClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D01C2005B16A0067F472 /* RMQTickingClock.h */; };
+		4F38D0AA2005B16B0067F472 /* RMQMethodDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D01D2005B16A0067F472 /* RMQMethodDecoder.h */; };
+		4F38D0AB2005B16B0067F472 /* RMQQueuingConnectionDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D01E2005B16A0067F472 /* RMQQueuingConnectionDelegateProxy.h */; };
+		4F38D0AC2005B16B0067F472 /* RMQConsumerDeliveryHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D01F2005B16A0067F472 /* RMQConsumerDeliveryHandler.h */; };
+		4F38D0AD2005B16B0067F472 /* RMQFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0202005B16A0067F472 /* RMQFrame.h */; };
+		4F38D0AE2005B16B0067F472 /* RMQAllocatedChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0212005B16A0067F472 /* RMQAllocatedChannel.m */; };
+		4F38D0AF2005B16B0067F472 /* RMQFrameHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0222005B16A0067F472 /* RMQFrameHandler.h */; };
+		4F38D0B02005B16B0067F472 /* RMQSuspendResumeDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0232005B16A0067F472 /* RMQSuspendResumeDispatcher.m */; };
+		4F38D0B12005B16B0067F472 /* RMQConnectionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0242005B16A0067F472 /* RMQConnectionConfig.m */; };
+		4F38D0B22005B16B0067F472 /* RMQMethods+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0252005B16A0067F472 /* RMQMethods+Convenience.h */; };
+		4F38D0B32005B16B0067F472 /* RMQExchange.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0262005B16A0067F472 /* RMQExchange.h */; };
+		4F38D0B42005B16B0067F472 /* RMQConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0272005B16A0067F472 /* RMQConsumer.m */; };
+		4F38D0B52005B16B0067F472 /* RMQWaiter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0282005B16A0067F472 /* RMQWaiter.h */; };
+		4F38D0B62005B16B0067F472 /* RMQTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0292005B16A0067F472 /* RMQTable.m */; };
+		4F38D0B72005B16B0067F472 /* RMQFramesetValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D02A2005B16A0067F472 /* RMQFramesetValidator.m */; };
+		4F38D0B82005B16B0067F472 /* RMQSemaphoreWaiterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D02B2005B16A0067F472 /* RMQSemaphoreWaiterFactory.m */; };
+		4F38D0B92005B16B0067F472 /* RMQMultipleChannelAllocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D02C2005B16A0067F472 /* RMQMultipleChannelAllocator.m */; };
+		4F38D0BA2005B16B0067F472 /* RMQURI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D02D2005B16A0067F472 /* RMQURI.h */; };
+		4F38D0BB2005B16B0067F472 /* RMQBasicProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D02E2005B16A0067F472 /* RMQBasicProperties.m */; };
+		4F38D0BC2005B16B0067F472 /* RMQSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D02F2005B16A0067F472 /* RMQSender.h */; };
+		4F38D0BD2005B16B0067F472 /* RMQPKCS12CertificateConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0302005B16A0067F472 /* RMQPKCS12CertificateConverter.h */; };
+		4F38D0BE2005B16B0067F472 /* RMQConnectionDelegateLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0312005B16A0067F472 /* RMQConnectionDelegateLogger.h */; };
+		4F38D0BF2005B16B0067F472 /* RMQMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0322005B16A0067F472 /* RMQMessage.m */; };
+		4F38D0C02005B16B0067F472 /* RMQMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0332005B16A0067F472 /* RMQMethods.h */; };
+		4F38D0C12005B16B0067F472 /* RMQMethodMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0342005B16A0067F472 /* RMQMethodMap.h */; };
+		4F38D0C22005B16B0067F472 /* RMQNameGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0352005B16A0067F472 /* RMQNameGenerator.h */; };
+		4F38D0C32005B16B0067F472 /* RMQErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0362005B16A0067F472 /* RMQErrors.h */; };
+		4F38D0C42005B16B0067F472 /* RMQGCDSerialQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0372005B16A0067F472 /* RMQGCDSerialQueue.m */; };
+		4F38D0C52005B16B0067F472 /* RMQGCDHeartbeatSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0382005B16A0067F472 /* RMQGCDHeartbeatSender.m */; };
+		4F38D0C62005B16B0067F472 /* RMQUnallocatedChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0392005B16A0067F472 /* RMQUnallocatedChannel.h */; };
+		4F38D0C72005B16B0067F472 /* RMQFramesetValidationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D03A2005B16A0067F472 /* RMQFramesetValidationResult.h */; };
+		4F38D0C82005B16B0067F472 /* RMQConfirmationTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D03B2005B16A0067F472 /* RMQConfirmationTransaction.m */; };
+		4F38D0C92005B16B0067F472 /* RMQParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D03C2005B16A0067F472 /* RMQParser.h */; };
+		4F38D0CA2005B16B0067F472 /* RMQTLSOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D03D2005B16A0067F472 /* RMQTLSOptions.m */; };
+		4F38D0CB2005B16B0067F472 /* RMQProcessInfoNameGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D03E2005B16A0067F472 /* RMQProcessInfoNameGenerator.m */; };
+		4F38D0CC2005B16B0067F472 /* RMQBasicProperties+MergeDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D03F2005B16A0067F472 /* RMQBasicProperties+MergeDefaults.m */; };
+		4F38D0CD2005B16B0067F472 /* RMQChannelAllocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0402005B16A0067F472 /* RMQChannelAllocator.h */; };
+		4F38D0CE2005B16B0067F472 /* RMQConnectionRecover.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0412005B16A0067F472 /* RMQConnectionRecover.h */; };
+		4F38D0CF2005B16B0067F472 /* RMQFrameset.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0422005B16A0067F472 /* RMQFrameset.m */; };
+		4F38D0D02005B16B0067F472 /* RMQClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0432005B16A0067F472 /* RMQClock.h */; };
+		4F38D0D12005B16B0067F472 /* RMQConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0442005B16A0067F472 /* RMQConnection.m */; };
+		4F38D0D22005B16B0067F472 /* RMQTransactionalConfirmations.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0452005B16A0067F472 /* RMQTransactionalConfirmations.h */; };
+		4F38D0D32005B16B0067F472 /* RMQHandshaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0462005B16A0067F472 /* RMQHandshaker.h */; };
+		4F38D0D42005B16B0067F472 /* RMQProtocolHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0472005B16A0067F472 /* RMQProtocolHeader.m */; };
+		4F38D0D52005B16B0067F472 /* RMQSynchronizedMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0482005B16A0067F472 /* RMQSynchronizedMutableDictionary.h */; };
+		4F38D0D62005B16B0067F472 /* RMQDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0492005B16A0067F472 /* RMQDispatcher.h */; };
+		4F38D0D72005B16B0067F472 /* RMQQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D04A2005B16A0067F472 /* RMQQueue.h */; };
+		4F38D0D82005B16B0067F472 /* RMQSemaphoreWaiter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D04B2005B16A0067F472 /* RMQSemaphoreWaiter.h */; };
+		4F38D0D92005B16B0067F472 /* RMQTransportDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D04C2005B16A0067F472 /* RMQTransportDelegate.h */; };
+		4F38D0DA2005B16B0067F472 /* RMQTCPSocketTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D04D2005B16A0067F472 /* RMQTCPSocketTransport.h */; };
+		4F38D0DB2005B16B0067F472 /* RMQHeartbeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D04E2005B16A0067F472 /* RMQHeartbeat.m */; };
+		4F38D0DC2005B16B0067F472 /* RMQSuspendResumeDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D04F2005B16A0067F472 /* RMQSuspendResumeDispatcher.h */; };
+		4F38D0DD2005B16B0067F472 /* RMQWaiterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0502005B16A0067F472 /* RMQWaiterFactory.h */; };
+		4F38D0DE2005B16B0067F472 /* RMQFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0512005B16A0067F472 /* RMQFrame.m */; };
+		4F38D0DF2005B16B0067F472 /* RMQAllocatedChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0522005B16A0067F472 /* RMQAllocatedChannel.h */; };
+		4F38D0E02005B16B0067F472 /* RMQConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0532005B16A0067F472 /* RMQConnectionDelegate.h */; };
+		4F38D0E12005B16B0067F472 /* RMQQueuingConnectionDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0542005B16A0067F472 /* RMQQueuingConnectionDelegateProxy.m */; };
+		4F38D0E22005B16B0067F472 /* RMQTickingClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0552005B16A0067F472 /* RMQTickingClock.m */; };
+		4F38D0E32005B16B0067F472 /* RMQMethodDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0562005B16A0067F472 /* RMQMethodDecoder.m */; };
+		4F38D0E42005B16B0067F472 /* RMQChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0572005B16A0067F472 /* RMQChannel.h */; };
+		4F38D0E52005B16B0067F472 /* RMQValues.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0582005B16A0067F472 /* RMQValues.h */; };
+		4F38D0E62005B16B0067F472 /* RMQReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0592005B16A0067F472 /* RMQReader.m */; };
+		4F38D0E72005B16B0067F472 /* RMQErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D05A2005B16A0067F472 /* RMQErrors.m */; };
+		4F38D0E82005B16B0067F472 /* RMQMethodMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D05B2005B16A0067F472 /* RMQMethodMap.m */; };
+		4F38D0E92005B16B0067F472 /* RMQMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D05C2005B16A0067F472 /* RMQMethods.m */; };
+		4F38D0EA2005B16B0067F472 /* RMQBasicProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D05D2005B16A0067F472 /* RMQBasicProperties.h */; };
+		4F38D0EB2005B16B0067F472 /* RMQMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D05E2005B16A0067F472 /* RMQMessage.h */; };
+		4F38D0EC2005B16B0067F472 /* RMQConnectionDelegateLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D05F2005B16A0067F472 /* RMQConnectionDelegateLogger.m */; };
+		4F38D0ED2005B16B0067F472 /* RMQPKCS12CertificateConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0602005B16A0067F472 /* RMQPKCS12CertificateConverter.m */; };
+		4F38D0EE2005B16B0067F472 /* RMQMultipleChannelAllocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0612005B16A0067F472 /* RMQMultipleChannelAllocator.h */; };
+		4F38D0EF2005B16B0067F472 /* RMQURI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0622005B16A0067F472 /* RMQURI.m */; };
+		4F38D0F02005B16B0067F472 /* RMQSemaphoreWaiterFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0632005B16A0067F472 /* RMQSemaphoreWaiterFactory.h */; };
+		4F38D0F12005B16B0067F472 /* RMQFramesetValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0642005B16A0067F472 /* RMQFramesetValidator.h */; };
+		4F38D0F22005B16B0067F472 /* RMQStarter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0652005B16A0067F472 /* RMQStarter.h */; };
+		4F38D0F32005B16B0067F472 /* RMQTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0662005B16A0067F472 /* RMQTable.h */; };
+		4F38D0F42005B16B0067F472 /* RMQConsumer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0672005B16A0067F472 /* RMQConsumer.h */; };
+		4F38D0F52005B16B0067F472 /* RMQConnectionConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0682005B16A0067F472 /* RMQConnectionConfig.h */; };
+		4F38D0F62005B16B0067F472 /* RMQMethods+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0692005B16A0067F472 /* RMQMethods+Convenience.m */; };
+		4F38D0F72005B16B0067F472 /* RMQExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D06A2005B16A0067F472 /* RMQExchange.m */; };
+		4F38D0F82005B16B0067F472 /* RMQProcessInfoNameGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D06B2005B16A0067F472 /* RMQProcessInfoNameGenerator.h */; };
+		4F38D0F92005B16B0067F472 /* RMQTLSOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D06C2005B16A0067F472 /* RMQTLSOptions.h */; };
+		4F38D0FA2005B16B0067F472 /* RMQParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D06D2005B16A0067F472 /* RMQParser.m */; };
+		4F38D0FB2005B16B0067F472 /* RMQConfirmationTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D06E2005B16A0067F472 /* RMQConfirmationTransaction.h */; };
+		4F38D0FC2005B16B0067F472 /* RMQConfirmations.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D06F2005B16A0067F472 /* RMQConfirmations.h */; };
+		4F38D0FD2005B16B0067F472 /* RMQUnallocatedChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0702005B16A0067F472 /* RMQUnallocatedChannel.m */; };
+		4F38D0FE2005B16B0067F472 /* RMQFramesetValidationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D0712005B16A0067F472 /* RMQFramesetValidationResult.m */; };
+		4F38D0FF2005B16B0067F472 /* RMQGCDHeartbeatSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0722005B16A0067F472 /* RMQGCDHeartbeatSender.h */; };
+		4F38D1002005B16B0067F472 /* RMQGCDSerialQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0732005B16A0067F472 /* RMQGCDSerialQueue.h */; };
+		4F38D1012005B16B0067F472 /* RMQTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0742005B16A0067F472 /* RMQTransport.h */; };
+		4F38D1022005B16B0067F472 /* license-header-ruby.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4F38D0752005B16A0067F472 /* license-header-ruby.txt */; };
+		4F38D1032005B16B0067F472 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4F38D0762005B16A0067F472 /* README.md */; };
+		4F38D1042005B16B0067F472 /* LICENSE-MPL-RabbitMQ in Resources */ = {isa = PBXBuildFile; fileRef = 4F38D0772005B16A0067F472 /* LICENSE-MPL-RabbitMQ */; };
+		4F38D1052005B16B0067F472 /* LICENSE-APACHE2 in Resources */ = {isa = PBXBuildFile; fileRef = 4F38D0782005B16A0067F472 /* LICENSE-APACHE2 */; };
+		4F38D1062005B16B0067F472 /* license-header.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4F38D0792005B16A0067F472 /* license-header.txt */; };
+		4F38D1072005B16B0067F472 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D07D2005B16B0067F472 /* GCDAsyncUdpSocket.m */; };
+		4F38D1082005B16B0067F472 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D07E2005B16B0067F472 /* GCDAsyncSocket.m */; };
+		4F38D1092005B16B0067F472 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D07F2005B16B0067F472 /* GCDAsyncUdpSocket.h */; };
+		4F38D10A2005B16B0067F472 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D0802005B16B0067F472 /* GCDAsyncSocket.h */; };
+		4F38D10B2005B16B0067F472 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 4F38D0812005B16B0067F472 /* README.markdown */; };
+		4F38D10C2005B16B0067F472 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4F38D0822005B16B0067F472 /* LICENSE.txt */; };
+		4F38D1162005C2F30067F472 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F38D1152005C2F30067F472 /* SystemConfiguration.framework */; };
+		4F38D139200734900067F472 /* WriteLogHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F38D1372007348F0067F472 /* WriteLogHandler.h */; };
+		4F38D13A200734900067F472 /* WriteLogHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F38D138200734900067F472 /* WriteLogHandler.m */; };
+		4FE0AF5D1FFCAD3D00E27690 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE0AF5C1FFCAD3D00E27690 /* CoreTelephony.framework */; };
+		F3F99BB33AA5116FC36F5A52 /* libPods-WechatPluginPro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CDB44525A087DAB0BF53FC /* libPods-WechatPluginPro.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01D6B0711FCEB03800061F0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01D6B05D1FCEB03700061F0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01D6B0651FCEB03700061F0D;
+			remoteInfo = WechatPluginPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D6B0661FCEB03800061F0D /* WechatPluginPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WechatPluginPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D6B0691FCEB03800061F0D /* WechatPluginPro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WechatPluginPro.h; sourceTree = "<group>"; };
+		01D6B06A1FCEB03800061F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D6B06F1FCEB03800061F0D /* WechatPluginProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WechatPluginProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D6B0741FCEB03800061F0D /* WechatPluginProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WechatPluginProTests.m; sourceTree = "<group>"; };
+		01D6B0761FCEB03800061F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D6B0891FCEC55600061F0D /* NSObject+hookWechat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+hookWechat.h"; sourceTree = "<group>"; };
+		01D6B08A1FCEC55600061F0D /* NSObject+hookWechat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+hookWechat.m"; sourceTree = "<group>"; };
+		01F0A7581FCFA48E009E206B /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		01F0A75A1FD53DA0009E206B /* SkingHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkingHelper.h; sourceTree = "<group>"; };
+		01F0A75B1FD53DA0009E206B /* SkingHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkingHelper.m; sourceTree = "<group>"; };
+		01F0A7621FD94DF5009E206B /* WCContactData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCContactData.h; sourceTree = "<group>"; };
+		01F0A7631FD94DF5009E206B /* WCContactData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCContactData.m; sourceTree = "<group>"; };
+		01F0A76E1FDE6185009E206B /* WXInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXInterface.h; sourceTree = "<group>"; };
+		450C590CF2FDDE04AB91E5BE /* Pods-WechatPluginPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WechatPluginPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WechatPluginPro/Pods-WechatPluginPro.debug.xcconfig"; sourceTree = "<group>"; };
+		4F1B5D2D1FE7835600A99FF0 /* RMQClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMQClient.h; sourceTree = "<group>"; };
+		4F1B5E7D1FE7E2FD00A99FF0 /* UserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		4F1B5E7E1FE7E2FD00A99FF0 /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		4F31C7A51FE23A41004D43F6 /* ServerCallHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerCallHelper.h; sourceTree = "<group>"; };
+		4F31C7A61FE23A41004D43F6 /* ServerCallHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerCallHelper.m; sourceTree = "<group>"; };
+		4F31C7A91FE25D48004D43F6 /* CallServerHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallServerHelper.h; sourceTree = "<group>"; };
+		4F31C7AA1FE25D48004D43F6 /* CallServerHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallServerHelper.m; sourceTree = "<group>"; };
+		4F38CFF42005B16A0067F472 /* JKVObjectPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKVObjectPrinter.h; sourceTree = "<group>"; };
+		4F38CFF52005B16A0067F472 /* JKVClassInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKVClassInspector.h; sourceTree = "<group>"; };
+		4F38CFF62005B16A0067F472 /* JKVMutableValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKVMutableValue.m; sourceTree = "<group>"; };
+		4F38CFF72005B16A0067F472 /* JKVValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKVValue.h; sourceTree = "<group>"; };
+		4F38CFF82005B16A0067F472 /* JKVProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKVProperty.h; sourceTree = "<group>"; };
+		4F38CFF92005B16A0067F472 /* JKVValueImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKVValueImpl.h; sourceTree = "<group>"; };
+		4F38CFFA2005B16A0067F472 /* JKVFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKVFactory.m; sourceTree = "<group>"; };
+		4F38CFFB2005B16A0067F472 /* JKVKeyedEncoderVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKVKeyedEncoderVisitor.m; sourceTree = "<group>"; };
+		4F38CFFC2005B16A0067F472 /* JKVObjectPrinter-Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JKVObjectPrinter-Protected.h"; sourceTree = "<group>"; };
+		4F38CFFD2005B16A0067F472 /* JKVKeyedDecoderVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKVKeyedDecoderVisitor.h; sourceTree = "<group>"; };
+		4F38CFFE2005B16A0067F472 /* JKVNonZeroSetterVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKVNonZeroSetterVisitor.h; sourceTree = "<group>"; };
+		4F38CFFF2005B16A0067F472 /* JKVMutableValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKVMutableValue.h; sourceTree = "<group>"; };
+		4F38D0002005B16A0067F472 /* JKVObjectPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKVObjectPrinter.m; sourceTree = "<group>"; };
+		4F38D0012005B16A0067F472 /* JKVClassInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKVClassInspector.m; sourceTree = "<group>"; };
+		4F38D0022005B16A0067F472 /* JKVValueImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKVValueImpl.m; sourceTree = "<group>"; };
+		4F38D0032005B16A0067F472 /* JKVProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKVProperty.m; sourceTree = "<group>"; };
+		4F38D0042005B16A0067F472 /* JKVKeyedEncoderVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKVKeyedEncoderVisitor.h; sourceTree = "<group>"; };
+		4F38D0052005B16A0067F472 /* JKVFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKVFactory.h; sourceTree = "<group>"; };
+		4F38D0062005B16A0067F472 /* JKVNonZeroSetterVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKVNonZeroSetterVisitor.m; sourceTree = "<group>"; };
+		4F38D0072005B16A0067F472 /* JKVKeyedDecoderVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKVKeyedDecoderVisitor.m; sourceTree = "<group>"; };
+		4F38D0092005B16A0067F472 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4F38D00B2005B16A0067F472 /* RMQHeartbeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQHeartbeat.h; sourceTree = "<group>"; };
+		4F38D00C2005B16A0067F472 /* RMQTCPSocketTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQTCPSocketTransport.m; sourceTree = "<group>"; };
+		4F38D00D2005B16A0067F472 /* RMQHeartbeatSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQHeartbeatSender.h; sourceTree = "<group>"; };
+		4F38D00E2005B16A0067F472 /* RMQSemaphoreWaiter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQSemaphoreWaiter.m; sourceTree = "<group>"; };
+		4F38D00F2005B16A0067F472 /* RMQSynchronizedMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQSynchronizedMutableDictionary.m; sourceTree = "<group>"; };
+		4F38D0102005B16A0067F472 /* RMQQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQQueue.m; sourceTree = "<group>"; };
+		4F38D0112005B16A0067F472 /* RMQHandshaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQHandshaker.m; sourceTree = "<group>"; };
+		4F38D0122005B16A0067F472 /* RMQProtocolHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQProtocolHeader.h; sourceTree = "<group>"; };
+		4F38D0132005B16A0067F472 /* RMQTransactionalConfirmations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQTransactionalConfirmations.m; sourceTree = "<group>"; };
+		4F38D0142005B16A0067F472 /* RMQConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQConnection.h; sourceTree = "<group>"; };
+		4F38D0152005B16A0067F472 /* RMQFrameset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQFrameset.h; sourceTree = "<group>"; };
+		4F38D0162005B16A0067F472 /* RMQConnectionRecover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQConnectionRecover.m; sourceTree = "<group>"; };
+		4F38D0172005B16A0067F472 /* RMQConnectionRecovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQConnectionRecovery.h; sourceTree = "<group>"; };
+		4F38D0182005B16A0067F472 /* RMQBasicProperties+MergeDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RMQBasicProperties+MergeDefaults.h"; sourceTree = "<group>"; };
+		4F38D0192005B16A0067F472 /* RMQLocalSerialQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQLocalSerialQueue.h; sourceTree = "<group>"; };
+		4F38D01A2005B16A0067F472 /* RMQValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQValues.m; sourceTree = "<group>"; };
+		4F38D01B2005B16A0067F472 /* RMQReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQReader.h; sourceTree = "<group>"; };
+		4F38D01C2005B16A0067F472 /* RMQTickingClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQTickingClock.h; sourceTree = "<group>"; };
+		4F38D01D2005B16A0067F472 /* RMQMethodDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQMethodDecoder.h; sourceTree = "<group>"; };
+		4F38D01E2005B16A0067F472 /* RMQQueuingConnectionDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQQueuingConnectionDelegateProxy.h; sourceTree = "<group>"; };
+		4F38D01F2005B16A0067F472 /* RMQConsumerDeliveryHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQConsumerDeliveryHandler.h; sourceTree = "<group>"; };
+		4F38D0202005B16A0067F472 /* RMQFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQFrame.h; sourceTree = "<group>"; };
+		4F38D0212005B16A0067F472 /* RMQAllocatedChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQAllocatedChannel.m; sourceTree = "<group>"; };
+		4F38D0222005B16A0067F472 /* RMQFrameHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQFrameHandler.h; sourceTree = "<group>"; };
+		4F38D0232005B16A0067F472 /* RMQSuspendResumeDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQSuspendResumeDispatcher.m; sourceTree = "<group>"; };
+		4F38D0242005B16A0067F472 /* RMQConnectionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQConnectionConfig.m; sourceTree = "<group>"; };
+		4F38D0252005B16A0067F472 /* RMQMethods+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RMQMethods+Convenience.h"; sourceTree = "<group>"; };
+		4F38D0262005B16A0067F472 /* RMQExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQExchange.h; sourceTree = "<group>"; };
+		4F38D0272005B16A0067F472 /* RMQConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQConsumer.m; sourceTree = "<group>"; };
+		4F38D0282005B16A0067F472 /* RMQWaiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQWaiter.h; sourceTree = "<group>"; };
+		4F38D0292005B16A0067F472 /* RMQTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQTable.m; sourceTree = "<group>"; };
+		4F38D02A2005B16A0067F472 /* RMQFramesetValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQFramesetValidator.m; sourceTree = "<group>"; };
+		4F38D02B2005B16A0067F472 /* RMQSemaphoreWaiterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQSemaphoreWaiterFactory.m; sourceTree = "<group>"; };
+		4F38D02C2005B16A0067F472 /* RMQMultipleChannelAllocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQMultipleChannelAllocator.m; sourceTree = "<group>"; };
+		4F38D02D2005B16A0067F472 /* RMQURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQURI.h; sourceTree = "<group>"; };
+		4F38D02E2005B16A0067F472 /* RMQBasicProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQBasicProperties.m; sourceTree = "<group>"; };
+		4F38D02F2005B16A0067F472 /* RMQSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQSender.h; sourceTree = "<group>"; };
+		4F38D0302005B16A0067F472 /* RMQPKCS12CertificateConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQPKCS12CertificateConverter.h; sourceTree = "<group>"; };
+		4F38D0312005B16A0067F472 /* RMQConnectionDelegateLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQConnectionDelegateLogger.h; sourceTree = "<group>"; };
+		4F38D0322005B16A0067F472 /* RMQMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQMessage.m; sourceTree = "<group>"; };
+		4F38D0332005B16A0067F472 /* RMQMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQMethods.h; sourceTree = "<group>"; };
+		4F38D0342005B16A0067F472 /* RMQMethodMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQMethodMap.h; sourceTree = "<group>"; };
+		4F38D0352005B16A0067F472 /* RMQNameGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQNameGenerator.h; sourceTree = "<group>"; };
+		4F38D0362005B16A0067F472 /* RMQErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQErrors.h; sourceTree = "<group>"; };
+		4F38D0372005B16A0067F472 /* RMQGCDSerialQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQGCDSerialQueue.m; sourceTree = "<group>"; };
+		4F38D0382005B16A0067F472 /* RMQGCDHeartbeatSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQGCDHeartbeatSender.m; sourceTree = "<group>"; };
+		4F38D0392005B16A0067F472 /* RMQUnallocatedChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQUnallocatedChannel.h; sourceTree = "<group>"; };
+		4F38D03A2005B16A0067F472 /* RMQFramesetValidationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQFramesetValidationResult.h; sourceTree = "<group>"; };
+		4F38D03B2005B16A0067F472 /* RMQConfirmationTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQConfirmationTransaction.m; sourceTree = "<group>"; };
+		4F38D03C2005B16A0067F472 /* RMQParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQParser.h; sourceTree = "<group>"; };
+		4F38D03D2005B16A0067F472 /* RMQTLSOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQTLSOptions.m; sourceTree = "<group>"; };
+		4F38D03E2005B16A0067F472 /* RMQProcessInfoNameGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQProcessInfoNameGenerator.m; sourceTree = "<group>"; };
+		4F38D03F2005B16A0067F472 /* RMQBasicProperties+MergeDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RMQBasicProperties+MergeDefaults.m"; sourceTree = "<group>"; };
+		4F38D0402005B16A0067F472 /* RMQChannelAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQChannelAllocator.h; sourceTree = "<group>"; };
+		4F38D0412005B16A0067F472 /* RMQConnectionRecover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQConnectionRecover.h; sourceTree = "<group>"; };
+		4F38D0422005B16A0067F472 /* RMQFrameset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQFrameset.m; sourceTree = "<group>"; };
+		4F38D0432005B16A0067F472 /* RMQClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQClock.h; sourceTree = "<group>"; };
+		4F38D0442005B16A0067F472 /* RMQConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQConnection.m; sourceTree = "<group>"; };
+		4F38D0452005B16A0067F472 /* RMQTransactionalConfirmations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQTransactionalConfirmations.h; sourceTree = "<group>"; };
+		4F38D0462005B16A0067F472 /* RMQHandshaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQHandshaker.h; sourceTree = "<group>"; };
+		4F38D0472005B16A0067F472 /* RMQProtocolHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQProtocolHeader.m; sourceTree = "<group>"; };
+		4F38D0482005B16A0067F472 /* RMQSynchronizedMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQSynchronizedMutableDictionary.h; sourceTree = "<group>"; };
+		4F38D0492005B16A0067F472 /* RMQDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQDispatcher.h; sourceTree = "<group>"; };
+		4F38D04A2005B16A0067F472 /* RMQQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQQueue.h; sourceTree = "<group>"; };
+		4F38D04B2005B16A0067F472 /* RMQSemaphoreWaiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQSemaphoreWaiter.h; sourceTree = "<group>"; };
+		4F38D04C2005B16A0067F472 /* RMQTransportDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQTransportDelegate.h; sourceTree = "<group>"; };
+		4F38D04D2005B16A0067F472 /* RMQTCPSocketTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQTCPSocketTransport.h; sourceTree = "<group>"; };
+		4F38D04E2005B16A0067F472 /* RMQHeartbeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQHeartbeat.m; sourceTree = "<group>"; };
+		4F38D04F2005B16A0067F472 /* RMQSuspendResumeDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQSuspendResumeDispatcher.h; sourceTree = "<group>"; };
+		4F38D0502005B16A0067F472 /* RMQWaiterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQWaiterFactory.h; sourceTree = "<group>"; };
+		4F38D0512005B16A0067F472 /* RMQFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQFrame.m; sourceTree = "<group>"; };
+		4F38D0522005B16A0067F472 /* RMQAllocatedChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQAllocatedChannel.h; sourceTree = "<group>"; };
+		4F38D0532005B16A0067F472 /* RMQConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQConnectionDelegate.h; sourceTree = "<group>"; };
+		4F38D0542005B16A0067F472 /* RMQQueuingConnectionDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQQueuingConnectionDelegateProxy.m; sourceTree = "<group>"; };
+		4F38D0552005B16A0067F472 /* RMQTickingClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQTickingClock.m; sourceTree = "<group>"; };
+		4F38D0562005B16A0067F472 /* RMQMethodDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQMethodDecoder.m; sourceTree = "<group>"; };
+		4F38D0572005B16A0067F472 /* RMQChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQChannel.h; sourceTree = "<group>"; };
+		4F38D0582005B16A0067F472 /* RMQValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQValues.h; sourceTree = "<group>"; };
+		4F38D0592005B16A0067F472 /* RMQReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQReader.m; sourceTree = "<group>"; };
+		4F38D05A2005B16A0067F472 /* RMQErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQErrors.m; sourceTree = "<group>"; };
+		4F38D05B2005B16A0067F472 /* RMQMethodMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQMethodMap.m; sourceTree = "<group>"; };
+		4F38D05C2005B16A0067F472 /* RMQMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQMethods.m; sourceTree = "<group>"; };
+		4F38D05D2005B16A0067F472 /* RMQBasicProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQBasicProperties.h; sourceTree = "<group>"; };
+		4F38D05E2005B16A0067F472 /* RMQMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQMessage.h; sourceTree = "<group>"; };
+		4F38D05F2005B16A0067F472 /* RMQConnectionDelegateLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQConnectionDelegateLogger.m; sourceTree = "<group>"; };
+		4F38D0602005B16A0067F472 /* RMQPKCS12CertificateConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQPKCS12CertificateConverter.m; sourceTree = "<group>"; };
+		4F38D0612005B16A0067F472 /* RMQMultipleChannelAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQMultipleChannelAllocator.h; sourceTree = "<group>"; };
+		4F38D0622005B16A0067F472 /* RMQURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQURI.m; sourceTree = "<group>"; };
+		4F38D0632005B16A0067F472 /* RMQSemaphoreWaiterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQSemaphoreWaiterFactory.h; sourceTree = "<group>"; };
+		4F38D0642005B16A0067F472 /* RMQFramesetValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQFramesetValidator.h; sourceTree = "<group>"; };
+		4F38D0652005B16A0067F472 /* RMQStarter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQStarter.h; sourceTree = "<group>"; };
+		4F38D0662005B16A0067F472 /* RMQTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQTable.h; sourceTree = "<group>"; };
+		4F38D0672005B16A0067F472 /* RMQConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQConsumer.h; sourceTree = "<group>"; };
+		4F38D0682005B16A0067F472 /* RMQConnectionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQConnectionConfig.h; sourceTree = "<group>"; };
+		4F38D0692005B16A0067F472 /* RMQMethods+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RMQMethods+Convenience.m"; sourceTree = "<group>"; };
+		4F38D06A2005B16A0067F472 /* RMQExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQExchange.m; sourceTree = "<group>"; };
+		4F38D06B2005B16A0067F472 /* RMQProcessInfoNameGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQProcessInfoNameGenerator.h; sourceTree = "<group>"; };
+		4F38D06C2005B16A0067F472 /* RMQTLSOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQTLSOptions.h; sourceTree = "<group>"; };
+		4F38D06D2005B16A0067F472 /* RMQParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQParser.m; sourceTree = "<group>"; };
+		4F38D06E2005B16A0067F472 /* RMQConfirmationTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQConfirmationTransaction.h; sourceTree = "<group>"; };
+		4F38D06F2005B16A0067F472 /* RMQConfirmations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQConfirmations.h; sourceTree = "<group>"; };
+		4F38D0702005B16A0067F472 /* RMQUnallocatedChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQUnallocatedChannel.m; sourceTree = "<group>"; };
+		4F38D0712005B16A0067F472 /* RMQFramesetValidationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMQFramesetValidationResult.m; sourceTree = "<group>"; };
+		4F38D0722005B16A0067F472 /* RMQGCDHeartbeatSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQGCDHeartbeatSender.h; sourceTree = "<group>"; };
+		4F38D0732005B16A0067F472 /* RMQGCDSerialQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQGCDSerialQueue.h; sourceTree = "<group>"; };
+		4F38D0742005B16A0067F472 /* RMQTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQTransport.h; sourceTree = "<group>"; };
+		4F38D0752005B16A0067F472 /* license-header-ruby.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "license-header-ruby.txt"; sourceTree = "<group>"; };
+		4F38D0762005B16A0067F472 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4F38D0772005B16A0067F472 /* LICENSE-MPL-RabbitMQ */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LICENSE-MPL-RabbitMQ"; sourceTree = "<group>"; };
+		4F38D0782005B16A0067F472 /* LICENSE-APACHE2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LICENSE-APACHE2"; sourceTree = "<group>"; };
+		4F38D0792005B16A0067F472 /* license-header.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "license-header.txt"; sourceTree = "<group>"; };
+		4F38D07D2005B16B0067F472 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		4F38D07E2005B16B0067F472 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		4F38D07F2005B16B0067F472 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		4F38D0802005B16B0067F472 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		4F38D0812005B16B0067F472 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		4F38D0822005B16B0067F472 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		4F38D1152005C2F30067F472 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4F38D1372007348F0067F472 /* WriteLogHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WriteLogHandler.h; sourceTree = "<group>"; };
+		4F38D138200734900067F472 /* WriteLogHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WriteLogHandler.m; sourceTree = "<group>"; };
+		4FE0AF5C1FFCAD3D00E27690 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4FE0AF5E1FFCAD4C00E27690 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4FE0AF601FFCAD7000E27690 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4FE0AF611FFCAD7000E27690 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		55D2FD4F1F94338A23264BC5 /* Pods-WechatPluginPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WechatPluginPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-WechatPluginPro/Pods-WechatPluginPro.release.xcconfig"; sourceTree = "<group>"; };
+		A5CDB44525A087DAB0BF53FC /* libPods-WechatPluginPro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WechatPluginPro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01D6B0621FCEB03700061F0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F38D1162005C2F30067F472 /* SystemConfiguration.framework in Frameworks */,
+				4FE0AF5D1FFCAD3D00E27690 /* CoreTelephony.framework in Frameworks */,
+				F3F99BB33AA5116FC36F5A52 /* libPods-WechatPluginPro.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D6B06C1FCEB03800061F0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D6B0701FCEB03800061F0D /* WechatPluginPro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D6B05C1FCEB03700061F0D = {
+			isa = PBXGroup;
+			children = (
+				4F38D1372007348F0067F472 /* WriteLogHandler.h */,
+				4F38D138200734900067F472 /* WriteLogHandler.m */,
+				4F38CFF02005B16A0067F472 /* Vendors */,
+				4F38D10D2005B1B80067F472 /* Model */,
+				4F1B5D2D1FE7835600A99FF0 /* RMQClient.h */,
+				01F0A76E1FDE6185009E206B /* WXInterface.h */,
+				01F0A7581FCFA48E009E206B /* main.mm */,
+				4F31C7A51FE23A41004D43F6 /* ServerCallHelper.h */,
+				4F31C7A61FE23A41004D43F6 /* ServerCallHelper.m */,
+				4F31C7A91FE25D48004D43F6 /* CallServerHelper.h */,
+				4F31C7AA1FE25D48004D43F6 /* CallServerHelper.m */,
+				01D6B0891FCEC55600061F0D /* NSObject+hookWechat.h */,
+				01D6B08A1FCEC55600061F0D /* NSObject+hookWechat.m */,
+				01D6B0681FCEB03800061F0D /* WechatPluginPro */,
+				01D6B0731FCEB03800061F0D /* WechatPluginProTests */,
+				01D6B0671FCEB03800061F0D /* Products */,
+				CEA424DE63173F0D4DB7234A /* Pods */,
+				40A56962FDEE18E76CBF70A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01D6B0671FCEB03800061F0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01D6B0661FCEB03800061F0D /* WechatPluginPro.framework */,
+				01D6B06F1FCEB03800061F0D /* WechatPluginProTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01D6B0681FCEB03800061F0D /* WechatPluginPro */ = {
+			isa = PBXGroup;
+			children = (
+				01D6B0691FCEB03800061F0D /* WechatPluginPro.h */,
+				01D6B06A1FCEB03800061F0D /* Info.plist */,
+			);
+			path = WechatPluginPro;
+			sourceTree = "<group>";
+		};
+		01D6B0731FCEB03800061F0D /* WechatPluginProTests */ = {
+			isa = PBXGroup;
+			children = (
+				01D6B0741FCEB03800061F0D /* WechatPluginProTests.m */,
+				01D6B0761FCEB03800061F0D /* Info.plist */,
+			);
+			path = WechatPluginProTests;
+			sourceTree = "<group>";
+		};
+		40A56962FDEE18E76CBF70A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F38D1152005C2F30067F472 /* SystemConfiguration.framework */,
+				4FE0AF611FFCAD7000E27690 /* libsqlite3.0.tbd */,
+				4FE0AF601FFCAD7000E27690 /* libsqlite3.tbd */,
+				4FE0AF5E1FFCAD4C00E27690 /* libz.tbd */,
+				4FE0AF5C1FFCAD3D00E27690 /* CoreTelephony.framework */,
+				A5CDB44525A087DAB0BF53FC /* libPods-WechatPluginPro.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F38CFF02005B16A0067F472 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				4F38CFF12005B16A0067F472 /* MQTTClient */,
+				4F38CFF32005B16A0067F472 /* JKVValue */,
+				4F38D0082005B16A0067F472 /* RMQClient */,
+				4F38D07A2005B16A0067F472 /* CocoaAsyncSocket */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		4F38CFF12005B16A0067F472 /* MQTTClient */ = {
+			isa = PBXGroup;
+			children = (
+				4F38CFF22005B16A0067F472 /* MQTTWebsocketTransport */,
+			);
+			path = MQTTClient;
+			sourceTree = "<group>";
+		};
+		4F38CFF22005B16A0067F472 /* MQTTWebsocketTransport */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MQTTWebsocketTransport;
+			sourceTree = "<group>";
+		};
+		4F38CFF32005B16A0067F472 /* JKVValue */ = {
+			isa = PBXGroup;
+			children = (
+				4F38CFF42005B16A0067F472 /* JKVObjectPrinter.h */,
+				4F38CFF52005B16A0067F472 /* JKVClassInspector.h */,
+				4F38CFF62005B16A0067F472 /* JKVMutableValue.m */,
+				4F38CFF72005B16A0067F472 /* JKVValue.h */,
+				4F38CFF82005B16A0067F472 /* JKVProperty.h */,
+				4F38CFF92005B16A0067F472 /* JKVValueImpl.h */,
+				4F38CFFA2005B16A0067F472 /* JKVFactory.m */,
+				4F38CFFB2005B16A0067F472 /* JKVKeyedEncoderVisitor.m */,
+				4F38CFFC2005B16A0067F472 /* JKVObjectPrinter-Protected.h */,
+				4F38CFFD2005B16A0067F472 /* JKVKeyedDecoderVisitor.h */,
+				4F38CFFE2005B16A0067F472 /* JKVNonZeroSetterVisitor.h */,
+				4F38CFFF2005B16A0067F472 /* JKVMutableValue.h */,
+				4F38D0002005B16A0067F472 /* JKVObjectPrinter.m */,
+				4F38D0012005B16A0067F472 /* JKVClassInspector.m */,
+				4F38D0022005B16A0067F472 /* JKVValueImpl.m */,
+				4F38D0032005B16A0067F472 /* JKVProperty.m */,
+				4F38D0042005B16A0067F472 /* JKVKeyedEncoderVisitor.h */,
+				4F38D0052005B16A0067F472 /* JKVFactory.h */,
+				4F38D0062005B16A0067F472 /* JKVNonZeroSetterVisitor.m */,
+				4F38D0072005B16A0067F472 /* JKVKeyedDecoderVisitor.m */,
+			);
+			path = JKVValue;
+			sourceTree = "<group>";
+		};
+		4F38D0082005B16A0067F472 /* RMQClient */ = {
+			isa = PBXGroup;
+			children = (
+				4F38D0092005B16A0067F472 /* LICENSE */,
+				4F38D00A2005B16A0067F472 /* RMQClient */,
+				4F38D0752005B16A0067F472 /* license-header-ruby.txt */,
+				4F38D0762005B16A0067F472 /* README.md */,
+				4F38D0772005B16A0067F472 /* LICENSE-MPL-RabbitMQ */,
+				4F38D0782005B16A0067F472 /* LICENSE-APACHE2 */,
+				4F38D0792005B16A0067F472 /* license-header.txt */,
+			);
+			path = RMQClient;
+			sourceTree = "<group>";
+		};
+		4F38D00A2005B16A0067F472 /* RMQClient */ = {
+			isa = PBXGroup;
+			children = (
+				4F38D00B2005B16A0067F472 /* RMQHeartbeat.h */,
+				4F38D00C2005B16A0067F472 /* RMQTCPSocketTransport.m */,
+				4F38D00D2005B16A0067F472 /* RMQHeartbeatSender.h */,
+				4F38D00E2005B16A0067F472 /* RMQSemaphoreWaiter.m */,
+				4F38D00F2005B16A0067F472 /* RMQSynchronizedMutableDictionary.m */,
+				4F38D0102005B16A0067F472 /* RMQQueue.m */,
+				4F38D0112005B16A0067F472 /* RMQHandshaker.m */,
+				4F38D0122005B16A0067F472 /* RMQProtocolHeader.h */,
+				4F38D0132005B16A0067F472 /* RMQTransactionalConfirmations.m */,
+				4F38D0142005B16A0067F472 /* RMQConnection.h */,
+				4F38D0152005B16A0067F472 /* RMQFrameset.h */,
+				4F38D0162005B16A0067F472 /* RMQConnectionRecover.m */,
+				4F38D0172005B16A0067F472 /* RMQConnectionRecovery.h */,
+				4F38D0182005B16A0067F472 /* RMQBasicProperties+MergeDefaults.h */,
+				4F38D0192005B16A0067F472 /* RMQLocalSerialQueue.h */,
+				4F38D01A2005B16A0067F472 /* RMQValues.m */,
+				4F38D01B2005B16A0067F472 /* RMQReader.h */,
+				4F38D01C2005B16A0067F472 /* RMQTickingClock.h */,
+				4F38D01D2005B16A0067F472 /* RMQMethodDecoder.h */,
+				4F38D01E2005B16A0067F472 /* RMQQueuingConnectionDelegateProxy.h */,
+				4F38D01F2005B16A0067F472 /* RMQConsumerDeliveryHandler.h */,
+				4F38D0202005B16A0067F472 /* RMQFrame.h */,
+				4F38D0212005B16A0067F472 /* RMQAllocatedChannel.m */,
+				4F38D0222005B16A0067F472 /* RMQFrameHandler.h */,
+				4F38D0232005B16A0067F472 /* RMQSuspendResumeDispatcher.m */,
+				4F38D0242005B16A0067F472 /* RMQConnectionConfig.m */,
+				4F38D0252005B16A0067F472 /* RMQMethods+Convenience.h */,
+				4F38D0262005B16A0067F472 /* RMQExchange.h */,
+				4F38D0272005B16A0067F472 /* RMQConsumer.m */,
+				4F38D0282005B16A0067F472 /* RMQWaiter.h */,
+				4F38D0292005B16A0067F472 /* RMQTable.m */,
+				4F38D02A2005B16A0067F472 /* RMQFramesetValidator.m */,
+				4F38D02B2005B16A0067F472 /* RMQSemaphoreWaiterFactory.m */,
+				4F38D02C2005B16A0067F472 /* RMQMultipleChannelAllocator.m */,
+				4F38D02D2005B16A0067F472 /* RMQURI.h */,
+				4F38D02E2005B16A0067F472 /* RMQBasicProperties.m */,
+				4F38D02F2005B16A0067F472 /* RMQSender.h */,
+				4F38D0302005B16A0067F472 /* RMQPKCS12CertificateConverter.h */,
+				4F38D0312005B16A0067F472 /* RMQConnectionDelegateLogger.h */,
+				4F38D0322005B16A0067F472 /* RMQMessage.m */,
+				4F38D0332005B16A0067F472 /* RMQMethods.h */,
+				4F38D0342005B16A0067F472 /* RMQMethodMap.h */,
+				4F38D0352005B16A0067F472 /* RMQNameGenerator.h */,
+				4F38D0362005B16A0067F472 /* RMQErrors.h */,
+				4F38D0372005B16A0067F472 /* RMQGCDSerialQueue.m */,
+				4F38D0382005B16A0067F472 /* RMQGCDHeartbeatSender.m */,
+				4F38D0392005B16A0067F472 /* RMQUnallocatedChannel.h */,
+				4F38D03A2005B16A0067F472 /* RMQFramesetValidationResult.h */,
+				4F38D03B2005B16A0067F472 /* RMQConfirmationTransaction.m */,
+				4F38D03C2005B16A0067F472 /* RMQParser.h */,
+				4F38D03D2005B16A0067F472 /* RMQTLSOptions.m */,
+				4F38D03E2005B16A0067F472 /* RMQProcessInfoNameGenerator.m */,
+				4F38D03F2005B16A0067F472 /* RMQBasicProperties+MergeDefaults.m */,
+				4F38D0402005B16A0067F472 /* RMQChannelAllocator.h */,
+				4F38D0412005B16A0067F472 /* RMQConnectionRecover.h */,
+				4F38D0422005B16A0067F472 /* RMQFrameset.m */,
+				4F38D0432005B16A0067F472 /* RMQClock.h */,
+				4F38D0442005B16A0067F472 /* RMQConnection.m */,
+				4F38D0452005B16A0067F472 /* RMQTransactionalConfirmations.h */,
+				4F38D0462005B16A0067F472 /* RMQHandshaker.h */,
+				4F38D0472005B16A0067F472 /* RMQProtocolHeader.m */,
+				4F38D0482005B16A0067F472 /* RMQSynchronizedMutableDictionary.h */,
+				4F38D0492005B16A0067F472 /* RMQDispatcher.h */,
+				4F38D04A2005B16A0067F472 /* RMQQueue.h */,
+				4F38D04B2005B16A0067F472 /* RMQSemaphoreWaiter.h */,
+				4F38D04C2005B16A0067F472 /* RMQTransportDelegate.h */,
+				4F38D04D2005B16A0067F472 /* RMQTCPSocketTransport.h */,
+				4F38D04E2005B16A0067F472 /* RMQHeartbeat.m */,
+				4F38D04F2005B16A0067F472 /* RMQSuspendResumeDispatcher.h */,
+				4F38D0502005B16A0067F472 /* RMQWaiterFactory.h */,
+				4F38D0512005B16A0067F472 /* RMQFrame.m */,
+				4F38D0522005B16A0067F472 /* RMQAllocatedChannel.h */,
+				4F38D0532005B16A0067F472 /* RMQConnectionDelegate.h */,
+				4F38D0542005B16A0067F472 /* RMQQueuingConnectionDelegateProxy.m */,
+				4F38D0552005B16A0067F472 /* RMQTickingClock.m */,
+				4F38D0562005B16A0067F472 /* RMQMethodDecoder.m */,
+				4F38D0572005B16A0067F472 /* RMQChannel.h */,
+				4F38D0582005B16A0067F472 /* RMQValues.h */,
+				4F38D0592005B16A0067F472 /* RMQReader.m */,
+				4F38D05A2005B16A0067F472 /* RMQErrors.m */,
+				4F38D05B2005B16A0067F472 /* RMQMethodMap.m */,
+				4F38D05C2005B16A0067F472 /* RMQMethods.m */,
+				4F38D05D2005B16A0067F472 /* RMQBasicProperties.h */,
+				4F38D05E2005B16A0067F472 /* RMQMessage.h */,
+				4F38D05F2005B16A0067F472 /* RMQConnectionDelegateLogger.m */,
+				4F38D0602005B16A0067F472 /* RMQPKCS12CertificateConverter.m */,
+				4F38D0612005B16A0067F472 /* RMQMultipleChannelAllocator.h */,
+				4F38D0622005B16A0067F472 /* RMQURI.m */,
+				4F38D0632005B16A0067F472 /* RMQSemaphoreWaiterFactory.h */,
+				4F38D0642005B16A0067F472 /* RMQFramesetValidator.h */,
+				4F38D0652005B16A0067F472 /* RMQStarter.h */,
+				4F38D0662005B16A0067F472 /* RMQTable.h */,
+				4F38D0672005B16A0067F472 /* RMQConsumer.h */,
+				4F38D0682005B16A0067F472 /* RMQConnectionConfig.h */,
+				4F38D0692005B16A0067F472 /* RMQMethods+Convenience.m */,
+				4F38D06A2005B16A0067F472 /* RMQExchange.m */,
+				4F38D06B2005B16A0067F472 /* RMQProcessInfoNameGenerator.h */,
+				4F38D06C2005B16A0067F472 /* RMQTLSOptions.h */,
+				4F38D06D2005B16A0067F472 /* RMQParser.m */,
+				4F38D06E2005B16A0067F472 /* RMQConfirmationTransaction.h */,
+				4F38D06F2005B16A0067F472 /* RMQConfirmations.h */,
+				4F38D0702005B16A0067F472 /* RMQUnallocatedChannel.m */,
+				4F38D0712005B16A0067F472 /* RMQFramesetValidationResult.m */,
+				4F38D0722005B16A0067F472 /* RMQGCDHeartbeatSender.h */,
+				4F38D0732005B16A0067F472 /* RMQGCDSerialQueue.h */,
+				4F38D0742005B16A0067F472 /* RMQTransport.h */,
+			);
+			path = RMQClient;
+			sourceTree = "<group>";
+		};
+		4F38D07A2005B16A0067F472 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				4F38D07B2005B16B0067F472 /* Source */,
+				4F38D0812005B16B0067F472 /* README.markdown */,
+				4F38D0822005B16B0067F472 /* LICENSE.txt */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		4F38D07B2005B16B0067F472 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4F38D07C2005B16B0067F472 /* GCD */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4F38D07C2005B16B0067F472 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				4F38D07D2005B16B0067F472 /* GCDAsyncUdpSocket.m */,
+				4F38D07E2005B16B0067F472 /* GCDAsyncSocket.m */,
+				4F38D07F2005B16B0067F472 /* GCDAsyncUdpSocket.h */,
+				4F38D0802005B16B0067F472 /* GCDAsyncSocket.h */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		4F38D10D2005B1B80067F472 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F1B5E7D1FE7E2FD00A99FF0 /* UserInfo.h */,
+				4F1B5E7E1FE7E2FD00A99FF0 /* UserInfo.m */,
+				01F0A7621FD94DF5009E206B /* WCContactData.h */,
+				01F0A7631FD94DF5009E206B /* WCContactData.m */,
+				01F0A75A1FD53DA0009E206B /* SkingHelper.h */,
+				01F0A75B1FD53DA0009E206B /* SkingHelper.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEA424DE63173F0D4DB7234A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				450C590CF2FDDE04AB91E5BE /* Pods-WechatPluginPro.debug.xcconfig */,
+				55D2FD4F1F94338A23264BC5 /* Pods-WechatPluginPro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01D6B0631FCEB03700061F0D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F38D08C2005B16B0067F472 /* JKVKeyedDecoderVisitor.h in Headers */,
+				4F38D0C32005B16B0067F472 /* RMQErrors.h in Headers */,
+				4F38D0F92005B16B0067F472 /* RMQTLSOptions.h in Headers */,
+				4F38D0D52005B16B0067F472 /* RMQSynchronizedMutableDictionary.h in Headers */,
+				4F38D08B2005B16B0067F472 /* JKVObjectPrinter-Protected.h in Headers */,
+				4F38D0A92005B16B0067F472 /* RMQTickingClock.h in Headers */,
+				4F38D0882005B16B0067F472 /* JKVValueImpl.h in Headers */,
+				4F38D0AF2005B16B0067F472 /* RMQFrameHandler.h in Headers */,
+				4F38D0EA2005B16B0067F472 /* RMQBasicProperties.h in Headers */,
+				4F38D139200734900067F472 /* WriteLogHandler.h in Headers */,
+				4F38D0DF2005B16B0067F472 /* RMQAllocatedChannel.h in Headers */,
+				4F38D0F42005B16B0067F472 /* RMQConsumer.h in Headers */,
+				4F38D0842005B16B0067F472 /* JKVClassInspector.h in Headers */,
+				4F38D0BE2005B16B0067F472 /* RMQConnectionDelegateLogger.h in Headers */,
+				4F38D0C02005B16B0067F472 /* RMQMethods.h in Headers */,
+				4F38D0F12005B16B0067F472 /* RMQFramesetValidator.h in Headers */,
+				4F38D0CE2005B16B0067F472 /* RMQConnectionRecover.h in Headers */,
+				4F38D0D72005B16B0067F472 /* RMQQueue.h in Headers */,
+				4F38D0C72005B16B0067F472 /* RMQFramesetValidationResult.h in Headers */,
+				4F38D0D22005B16B0067F472 /* RMQTransactionalConfirmations.h in Headers */,
+				4F38D0E52005B16B0067F472 /* RMQValues.h in Headers */,
+				4F38D0A52005B16B0067F472 /* RMQBasicProperties+MergeDefaults.h in Headers */,
+				4F38D0E42005B16B0067F472 /* RMQChannel.h in Headers */,
+				4F38D0FC2005B16B0067F472 /* RMQConfirmations.h in Headers */,
+				4F38D0862005B16B0067F472 /* JKVValue.h in Headers */,
+				4F38D0AC2005B16B0067F472 /* RMQConsumerDeliveryHandler.h in Headers */,
+				4F38D0942005B16B0067F472 /* JKVFactory.h in Headers */,
+				4F38D0F22005B16B0067F472 /* RMQStarter.h in Headers */,
+				4F38D0C62005B16B0067F472 /* RMQUnallocatedChannel.h in Headers */,
+				4F38D0D92005B16B0067F472 /* RMQTransportDelegate.h in Headers */,
+				4F38D0F02005B16B0067F472 /* RMQSemaphoreWaiterFactory.h in Headers */,
+				4F1B5D2E1FE7835600A99FF0 /* RMQClient.h in Headers */,
+				4F38D0AD2005B16B0067F472 /* RMQFrame.h in Headers */,
+				01F0A7701FDE6185009E206B /* WXInterface.h in Headers */,
+				4F38D1092005B16B0067F472 /* GCDAsyncUdpSocket.h in Headers */,
+				4F38D0B52005B16B0067F472 /* RMQWaiter.h in Headers */,
+				01D6B0771FCEB03800061F0D /* WechatPluginPro.h in Headers */,
+				4F38D0DD2005B16B0067F472 /* RMQWaiterFactory.h in Headers */,
+				4F38D0DC2005B16B0067F472 /* RMQSuspendResumeDispatcher.h in Headers */,
+				4F38D0CD2005B16B0067F472 /* RMQChannelAllocator.h in Headers */,
+				4F38D0AB2005B16B0067F472 /* RMQQueuingConnectionDelegateProxy.h in Headers */,
+				4F38D09F2005B16B0067F472 /* RMQProtocolHeader.h in Headers */,
+				4F38D0C12005B16B0067F472 /* RMQMethodMap.h in Headers */,
+				4F38D10A2005B16B0067F472 /* GCDAsyncSocket.h in Headers */,
+				4F38D0FB2005B16B0067F472 /* RMQConfirmationTransaction.h in Headers */,
+				4F38D0A22005B16B0067F472 /* RMQFrameset.h in Headers */,
+				4F38D0EB2005B16B0067F472 /* RMQMessage.h in Headers */,
+				4F38D0A12005B16B0067F472 /* RMQConnection.h in Headers */,
+				4F38D0A62005B16B0067F472 /* RMQLocalSerialQueue.h in Headers */,
+				01F0A7641FD94DF5009E206B /* WCContactData.h in Headers */,
+				4F38D0A82005B16B0067F472 /* RMQReader.h in Headers */,
+				4F38D0C22005B16B0067F472 /* RMQNameGenerator.h in Headers */,
+				4F38D0BA2005B16B0067F472 /* RMQURI.h in Headers */,
+				01D6B08B1FCEC55600061F0D /* NSObject+hookWechat.h in Headers */,
+				4F38D0932005B16B0067F472 /* JKVKeyedEncoderVisitor.h in Headers */,
+				4F38D0F82005B16B0067F472 /* RMQProcessInfoNameGenerator.h in Headers */,
+				4F38D0BD2005B16B0067F472 /* RMQPKCS12CertificateConverter.h in Headers */,
+				4F38D08E2005B16B0067F472 /* JKVMutableValue.h in Headers */,
+				4F38D0D82005B16B0067F472 /* RMQSemaphoreWaiter.h in Headers */,
+				4F38D0D32005B16B0067F472 /* RMQHandshaker.h in Headers */,
+				4F31C7AB1FE25D48004D43F6 /* CallServerHelper.h in Headers */,
+				4F38D0FF2005B16B0067F472 /* RMQGCDHeartbeatSender.h in Headers */,
+				4F38D0DA2005B16B0067F472 /* RMQTCPSocketTransport.h in Headers */,
+				4F38D0B32005B16B0067F472 /* RMQExchange.h in Headers */,
+				4F38D0B22005B16B0067F472 /* RMQMethods+Convenience.h in Headers */,
+				4F38D0BC2005B16B0067F472 /* RMQSender.h in Headers */,
+				4F38D0D62005B16B0067F472 /* RMQDispatcher.h in Headers */,
+				4F38D08D2005B16B0067F472 /* JKVNonZeroSetterVisitor.h in Headers */,
+				01F0A75C1FD53DA0009E206B /* SkingHelper.h in Headers */,
+				4F38D0F52005B16B0067F472 /* RMQConnectionConfig.h in Headers */,
+				4F38D0A42005B16B0067F472 /* RMQConnectionRecovery.h in Headers */,
+				4F38D1012005B16B0067F472 /* RMQTransport.h in Headers */,
+				4F38D0C92005B16B0067F472 /* RMQParser.h in Headers */,
+				4F38D0832005B16B0067F472 /* JKVObjectPrinter.h in Headers */,
+				4F38D0EE2005B16B0067F472 /* RMQMultipleChannelAllocator.h in Headers */,
+				4F1B5E7F1FE7E2FD00A99FF0 /* UserInfo.h in Headers */,
+				4F38D1002005B16B0067F472 /* RMQGCDSerialQueue.h in Headers */,
+				4F38D0E02005B16B0067F472 /* RMQConnectionDelegate.h in Headers */,
+				4F38D0872005B16B0067F472 /* JKVProperty.h in Headers */,
+				4F38D0F32005B16B0067F472 /* RMQTable.h in Headers */,
+				4F38D09A2005B16B0067F472 /* RMQHeartbeatSender.h in Headers */,
+				4F38D0D02005B16B0067F472 /* RMQClock.h in Headers */,
+				4F31C7A71FE23A41004D43F6 /* ServerCallHelper.h in Headers */,
+				4F38D0982005B16B0067F472 /* RMQHeartbeat.h in Headers */,
+				4F38D0AA2005B16B0067F472 /* RMQMethodDecoder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		01D6B0651FCEB03700061F0D /* WechatPluginPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D6B07A1FCEB03800061F0D /* Build configuration list for PBXNativeTarget "WechatPluginPro" */;
+			buildPhases = (
+				935DDBFE39EF0157862C0E87 /* [CP] Check Pods Manifest.lock */,
+				01D6B0611FCEB03700061F0D /* Sources */,
+				01D6B0621FCEB03700061F0D /* Frameworks */,
+				01D6B0631FCEB03700061F0D /* Headers */,
+				01D6B0641FCEB03700061F0D /* Resources */,
+				01D6B0801FCEB11500061F0D /* ShellScript */,
+				CAC569E93C5DBF675D9BE87C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WechatPluginPro;
+			productName = WechatPluginPro;
+			productReference = 01D6B0661FCEB03800061F0D /* WechatPluginPro.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		01D6B06E1FCEB03800061F0D /* WechatPluginProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D6B07D1FCEB03800061F0D /* Build configuration list for PBXNativeTarget "WechatPluginProTests" */;
+			buildPhases = (
+				01D6B06B1FCEB03800061F0D /* Sources */,
+				01D6B06C1FCEB03800061F0D /* Frameworks */,
+				01D6B06D1FCEB03800061F0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01D6B0721FCEB03800061F0D /* PBXTargetDependency */,
+			);
+			name = WechatPluginProTests;
+			productName = WechatPluginProTests;
+			productReference = 01D6B06F1FCEB03800061F0D /* WechatPluginProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01D6B05D1FCEB03700061F0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "刘伟";
+				TargetAttributes = {
+					01D6B0651FCEB03700061F0D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					01D6B06E1FCEB03800061F0D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 01D6B0601FCEB03700061F0D /* Build configuration list for PBXProject "WechatPluginPro" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01D6B05C1FCEB03700061F0D;
+			productRefGroup = 01D6B0671FCEB03800061F0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01D6B0651FCEB03700061F0D /* WechatPluginPro */,
+				01D6B06E1FCEB03800061F0D /* WechatPluginProTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01D6B0641FCEB03700061F0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F38D1042005B16B0067F472 /* LICENSE-MPL-RabbitMQ in Resources */,
+				4F38D1022005B16B0067F472 /* license-header-ruby.txt in Resources */,
+				4F38D1052005B16B0067F472 /* LICENSE-APACHE2 in Resources */,
+				4F38D0972005B16B0067F472 /* LICENSE in Resources */,
+				4F38D10B2005B16B0067F472 /* README.markdown in Resources */,
+				4F38D10C2005B16B0067F472 /* LICENSE.txt in Resources */,
+				4F38D1032005B16B0067F472 /* README.md in Resources */,
+				4F38D1062005B16B0067F472 /* license-header.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D6B06D1FCEB03800061F0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01D6B0801FCEB11500061F0D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n# 要注入的的app\napp_name=\"WeChat\"\n# 此framework名字\nframework_name=\"WechatPluginPro\"\napp_bundle_path=\"/Applications/${app_name}.app/Contents/MacOS\"\napp_executable_path=\"${app_bundle_path}/${app_name}\"\napp_executable_backup_path=\"${app_executable_path}_backup\"\nframework_path=\"${app_bundle_path}/${framework_name}.framework\"\n# 备份WeChat原始可执行文件\nif [ ! -f \"$app_executable_backup_path\" ]\nthen\ncp \"$app_executable_path\" \"$app_executable_backup_path\"\nfi\ncp -r \"${BUILT_PRODUCTS_DIR}/${framework_name}.framework\" ${app_bundle_path}\n# 注入动态库\n./insert_dylib --all-yes \"${framework_path}/${framework_name}\" \"$app_executable_backup_path\" \"$app_executable_path\"\n";
+		};
+		935DDBFE39EF0157862C0E87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CAC569E93C5DBF675D9BE87C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WechatPluginPro/Pods-WechatPluginPro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01D6B0611FCEB03700061F0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F38D0B12005B16B0067F472 /* RMQConnectionConfig.m in Sources */,
+				4F38D0CC2005B16B0067F472 /* RMQBasicProperties+MergeDefaults.m in Sources */,
+				4F38D0B72005B16B0067F472 /* RMQFramesetValidator.m in Sources */,
+				4F38D0B02005B16B0067F472 /* RMQSuspendResumeDispatcher.m in Sources */,
+				4F1B5E801FE7E2FD00A99FF0 /* UserInfo.m in Sources */,
+				4F38D0E92005B16B0067F472 /* RMQMethods.m in Sources */,
+				4F38D0D42005B16B0067F472 /* RMQProtocolHeader.m in Sources */,
+				4F38D0BB2005B16B0067F472 /* RMQBasicProperties.m in Sources */,
+				4F31C7AC1FE25D48004D43F6 /* CallServerHelper.m in Sources */,
+				4F38D0E32005B16B0067F472 /* RMQMethodDecoder.m in Sources */,
+				4F38D0992005B16B0067F472 /* RMQTCPSocketTransport.m in Sources */,
+				4F38D0CB2005B16B0067F472 /* RMQProcessInfoNameGenerator.m in Sources */,
+				4F38D0A02005B16B0067F472 /* RMQTransactionalConfirmations.m in Sources */,
+				4F38D0C82005B16B0067F472 /* RMQConfirmationTransaction.m in Sources */,
+				4F38D09E2005B16B0067F472 /* RMQHandshaker.m in Sources */,
+				4F38D09B2005B16B0067F472 /* RMQSemaphoreWaiter.m in Sources */,
+				4F38D0922005B16B0067F472 /* JKVProperty.m in Sources */,
+				4F38D0FD2005B16B0067F472 /* RMQUnallocatedChannel.m in Sources */,
+				4F38D0B82005B16B0067F472 /* RMQSemaphoreWaiterFactory.m in Sources */,
+				4F38D0E82005B16B0067F472 /* RMQMethodMap.m in Sources */,
+				4F38D0E62005B16B0067F472 /* RMQReader.m in Sources */,
+				4F38D0B92005B16B0067F472 /* RMQMultipleChannelAllocator.m in Sources */,
+				4F38D0ED2005B16B0067F472 /* RMQPKCS12CertificateConverter.m in Sources */,
+				4F38D13A200734900067F472 /* WriteLogHandler.m in Sources */,
+				4F38D09C2005B16B0067F472 /* RMQSynchronizedMutableDictionary.m in Sources */,
+				4F38D0C42005B16B0067F472 /* RMQGCDSerialQueue.m in Sources */,
+				01F0A7591FCFA48E009E206B /* main.mm in Sources */,
+				4F38D0CA2005B16B0067F472 /* RMQTLSOptions.m in Sources */,
+				4F38D08F2005B16B0067F472 /* JKVObjectPrinter.m in Sources */,
+				4F38D08A2005B16B0067F472 /* JKVKeyedEncoderVisitor.m in Sources */,
+				01D6B08C1FCEC55600061F0D /* NSObject+hookWechat.m in Sources */,
+				4F38D0B62005B16B0067F472 /* RMQTable.m in Sources */,
+				4F38D0DE2005B16B0067F472 /* RMQFrame.m in Sources */,
+				4F38D1072005B16B0067F472 /* GCDAsyncUdpSocket.m in Sources */,
+				4F38D0902005B16B0067F472 /* JKVClassInspector.m in Sources */,
+				4F38D0FE2005B16B0067F472 /* RMQFramesetValidationResult.m in Sources */,
+				4F38D0892005B16B0067F472 /* JKVFactory.m in Sources */,
+				4F38D0852005B16B0067F472 /* JKVMutableValue.m in Sources */,
+				4F38D0E12005B16B0067F472 /* RMQQueuingConnectionDelegateProxy.m in Sources */,
+				4F38D09D2005B16B0067F472 /* RMQQueue.m in Sources */,
+				4F38D0F72005B16B0067F472 /* RMQExchange.m in Sources */,
+				4F38D0DB2005B16B0067F472 /* RMQHeartbeat.m in Sources */,
+				4F38D0EF2005B16B0067F472 /* RMQURI.m in Sources */,
+				01F0A7651FD94DF5009E206B /* WCContactData.m in Sources */,
+				4F38D0A32005B16B0067F472 /* RMQConnectionRecover.m in Sources */,
+				01F0A75D1FD53DA0009E206B /* SkingHelper.m in Sources */,
+				4F38D0F62005B16B0067F472 /* RMQMethods+Convenience.m in Sources */,
+				4F38D0AE2005B16B0067F472 /* RMQAllocatedChannel.m in Sources */,
+				4F38D0EC2005B16B0067F472 /* RMQConnectionDelegateLogger.m in Sources */,
+				4F38D0FA2005B16B0067F472 /* RMQParser.m in Sources */,
+				4F38D0E72005B16B0067F472 /* RMQErrors.m in Sources */,
+				4F38D0CF2005B16B0067F472 /* RMQFrameset.m in Sources */,
+				4F38D0962005B16B0067F472 /* JKVKeyedDecoderVisitor.m in Sources */,
+				4F38D0BF2005B16B0067F472 /* RMQMessage.m in Sources */,
+				4F38D0A72005B16B0067F472 /* RMQValues.m in Sources */,
+				4F38D0952005B16B0067F472 /* JKVNonZeroSetterVisitor.m in Sources */,
+				4F38D1082005B16B0067F472 /* GCDAsyncSocket.m in Sources */,
+				4F38D0E22005B16B0067F472 /* RMQTickingClock.m in Sources */,
+				4F38D0C52005B16B0067F472 /* RMQGCDHeartbeatSender.m in Sources */,
+				4F38D0D12005B16B0067F472 /* RMQConnection.m in Sources */,
+				4F38D0912005B16B0067F472 /* JKVValueImpl.m in Sources */,
+				4F38D0B42005B16B0067F472 /* RMQConsumer.m in Sources */,
+				4F31C7A81FE23A42004D43F6 /* ServerCallHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01D6B06B1FCEB03800061F0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D6B0751FCEB03800061F0D /* WechatPluginProTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01D6B0721FCEB03800061F0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01D6B0651FCEB03700061F0D /* WechatPluginPro */;
+			targetProxy = 01D6B0711FCEB03800061F0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01D6B0781FCEB03800061F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		01D6B0791FCEB03800061F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		01D6B07B1FCEB03800061F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 450C590CF2FDDE04AB91E5BE /* Pods-WechatPluginPro.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QUL3Z494XF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YMeng",
+				);
+				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"$(SRCROOT)",
+				);
+				INFOPLIST_FILE = WechatPluginPro/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wechatPro.www.WechatPluginPro;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		01D6B07C1FCEB03800061F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55D2FD4F1F94338A23264BC5 /* Pods-WechatPluginPro.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QUL3Z494XF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YMeng",
+				);
+				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"$(SRCROOT)",
+				);
+				INFOPLIST_FILE = WechatPluginPro/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wechatPro.www.WechatPluginPro;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		01D6B07E1FCEB03800061F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WechatPluginProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wechatPro.www.WechatPluginProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		01D6B07F1FCEB03800061F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WechatPluginProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wechatPro.www.WechatPluginProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01D6B0601FCEB03700061F0D /* Build configuration list for PBXProject "WechatPluginPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D6B0781FCEB03800061F0D /* Debug */,
+				01D6B0791FCEB03800061F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D6B07A1FCEB03800061F0D /* Build configuration list for PBXNativeTarget "WechatPluginPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D6B07B1FCEB03800061F0D /* Debug */,
+				01D6B07C1FCEB03800061F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D6B07D1FCEB03800061F0D /* Build configuration list for PBXNativeTarget "WechatPluginProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D6B07E1FCEB03800061F0D /* Debug */,
+				01D6B07F1FCEB03800061F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01D6B05D1FCEB03700061F0D /* Project object */;
+}
