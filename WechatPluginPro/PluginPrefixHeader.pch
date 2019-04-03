@@ -1,0 +1,27 @@
+//
+//  PluginPrefixHeader.pch
+//  WechatPluginPro
+//
+//  Created by boohee on 2018/5/24.
+//  Copyright © 2018年 boohee. All rights reserved.
+//
+
+#ifndef PluginPrefixHeader_pch
+#define PluginPrefixHeader_pch
+
+#import "WXInterface.h"
+#import "WCContactData.h"
+#import "UserInfo.h"
+#import "IcelandConfig.h"
+
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+
+#ifdef LOG_LEVEL_DEF
+#   undef LOG_LEVEL_DEF
+#endif
+#define LOG_LEVEL_DEF [IcelandConfig ddLogLevel]
+
+#endif /* PluginPrefixHeader_pch */
+
+

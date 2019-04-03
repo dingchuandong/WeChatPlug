@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "01D6B06E1FCEB03800061F0D"
-               BuildableName = "WechatPluginProTests.xctest"
-               BlueprintName = "WechatPluginProTests"
-               ReferencedContainer = "container:WechatPluginPro.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "01D6B0651FCEB03700061F0D"
-            BuildableName = "WechatPluginPro.framework"
-            BlueprintName = "WechatPluginPro"
-            ReferencedContainer = "container:WechatPluginPro.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>

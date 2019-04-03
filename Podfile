@@ -6,7 +6,7 @@ target 'WechatPluginPro' do
   # use_frameworks!
 
   pod 'AFNetworking', '~> 3.0'
-  #pod 'Bugly'
+  pod 'CocoaLumberjack'
   #pod "HockeySDK-Mac"
 
 
